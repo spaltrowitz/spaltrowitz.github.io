@@ -407,6 +407,7 @@ img {
   color: var(--gray-800);
   font-style: italic;
   font-weight: 600;
+  -webkit-text-fill-color: var(--gray-800);
 }
 
 .about-stats {
