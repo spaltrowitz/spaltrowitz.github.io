@@ -1069,6 +1069,8 @@ img {
     grid-column: 2;
     margin-bottom: 4px;
     min-height: auto;
+    text-align: left;
+    justify-content: flex-start;
   }
 
   .community-desc {
