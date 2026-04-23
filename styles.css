@@ -627,6 +627,9 @@ img {
   text-align: center;
   transition: var(--transition);
   border: 1px solid var(--gray-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .community-card:hover {
@@ -660,6 +663,7 @@ img {
   font-size: 0.9rem;
   color: var(--gray-500);
   line-height: 1.6;
+  margin-top: auto;
 }
 
 /* ========================================
