@@ -116,12 +116,7 @@ form.addEventListener('submit', async (e) => {
       throw new Error('Form submission failed');
     }
   } catch {
-    submitBtn.innerHTML = 'Something went wrong — try again';
-    submitBtn.style.background = 'linear-gradient(135deg, #EF4444, #DC2626)';
-    setTimeout(() => {
-      submitBtn.innerHTML = originalText;
-      submitBtn.style.background = '';
-      submitBtn.disabled = false;
-    }, 3000);
+    // Fallback: submit normally (FormSubmit will handle the redirect)
+    form.submit();
   }
 });
