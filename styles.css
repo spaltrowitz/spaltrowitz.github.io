@@ -1007,7 +1007,7 @@ img {
     padding-top: 12px;
   }
 
-  /* Compact community cards - horizontal layout */
+  /* Compact community cards - grid layout */
   .community-grid {
     grid-template-columns: 1fr;
     gap: 12px;
@@ -1015,24 +1015,38 @@ img {
   }
 
   .community-card {
-    padding: 20px;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 16px;
+    row-gap: 2px;
+    align-items: start;
     text-align: left;
-    gap: 16px;
+    padding: 20px;
   }
 
   .community-icon {
+    grid-row: 1 / -1;
+    align-self: center;
     font-size: 1.5rem;
     margin-bottom: 0;
-    flex-shrink: 0;
   }
 
   .community-card h3 {
+    grid-column: 2;
     font-size: 1rem;
   }
 
+  .community-org {
+    grid-column: 2;
+    margin-bottom: 4px;
+    min-height: auto;
+  }
+
   .community-desc {
+    grid-column: 2;
     font-size: 0.85rem;
+    margin-top: 0;
   }
 
   /* Tighten form */
