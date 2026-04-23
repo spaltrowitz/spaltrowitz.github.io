@@ -970,23 +970,81 @@ img {
     font-size: 1.6rem;
   }
 
+  /* Compact project cards */
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 32px;
   }
 
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-icon {
+    font-size: 1.5rem;
+  }
+
+  .project-name {
+    font-size: 1.1rem;
+  }
+
+  .project-tagline {
+    font-size: 0.88rem;
+    margin-bottom: 14px;
+  }
+
+  .project-header {
+    margin-bottom: 10px;
+  }
+
+  .project-links,
+  .project-links-right {
+    padding-top: 12px;
+  }
+
+  /* Compact community cards - horizontal layout */
   .community-grid {
     grid-template-columns: 1fr;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    gap: 12px;
+    margin-top: 32px;
   }
 
+  .community-card {
+    padding: 20px;
+    flex-direction: row;
+    text-align: left;
+    gap: 16px;
+  }
+
+  .community-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .community-card h3 {
+    font-size: 1rem;
+  }
+
+  .community-desc {
+    font-size: 0.85rem;
+  }
+
+  /* Tighten form */
   .form-grid {
     grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .request-form {
-    padding: 24px;
+    padding: 20px;
+  }
+
+  /* Smaller hero avatar */
+  .hero-avatar {
+    width: 90px;
+    height: 90px;
   }
 
   .footer-content {
@@ -1025,7 +1083,7 @@ img {
   .projects,
   .community,
   .request {
-    padding: 60px 0;
+    padding: 40px 0;
   }
 
   .section-title {
@@ -1033,6 +1091,71 @@ img {
   }
 
   .project-card {
-    padding: 20px;
+    padding: 14px 16px;
+  }
+
+  .project-header {
+    margin-bottom: 4px;
+  }
+
+  .project-icon {
+    font-size: 1.2rem;
+  }
+
+  .project-name {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+  }
+
+  .project-tagline {
+    font-size: 0.82rem;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+
+  .project-links,
+  .project-links-right {
+    padding-top: 8px;
+  }
+
+  .project-link {
+    font-size: 0.75rem;
+    padding: 3px 6px;
+  }
+
+  .coming-soon {
+    font-size: 0.75rem;
+  }
+
+  .projects-grid {
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .community-grid {
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .community-card {
+    padding: 14px 16px;
+  }
+
+  .community-icon {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+  }
+
+  .community-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .community-org {
+    font-size: 0.75rem;
+    margin-bottom: 4px;
+  }
+
+  .community-desc {
+    font-size: 0.78rem;
   }
 }
