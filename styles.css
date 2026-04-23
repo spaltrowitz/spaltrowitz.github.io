@@ -984,6 +984,8 @@ img {
   .project-card {
     padding: 16px;
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
   .project-icon {
@@ -1001,23 +1003,30 @@ img {
     line-height: 1.5;
   }
 
-  .project-header {
-    margin-bottom: 8px;
-    padding-right: 50px;
-  }
-
   .status-badge {
     font-size: 0.65rem;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+
+  .project-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
   }
 
   .project-links,
   .project-links-right {
     border-top: none;
     padding-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
     position: absolute;
     top: 16px;
-    right: 16px;
-    gap: 8px;
+    left: 40px;
   }
 
   .project-links .coming-soon {
@@ -1031,8 +1040,8 @@ img {
   }
 
   .project-link svg {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
   }
 
   /* Compact community cards - grid layout */
