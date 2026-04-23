@@ -953,16 +953,19 @@ img {
     min-height: auto;
   }
 
-  .hero-tagline br {
-    display: none;
-  }
-
-  .scroll-indicator {
-    display: none;
-  }
-
   .about-text {
     max-width: 100%;
+  }
+
+  .about,
+  .projects,
+  .community,
+  .request {
+    padding: 80px 0;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
   }
 
   .projects-grid {
@@ -971,6 +974,9 @@ img {
 
   .community-grid {
     grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .form-grid {
@@ -998,6 +1004,11 @@ img {
     font-size: 2.2rem;
   }
 
+  .hero-avatar {
+    width: 100px;
+    height: 100px;
+  }
+
   .hero-cta {
     flex-direction: column;
     align-items: center;
@@ -1006,5 +1017,20 @@ img {
   .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .about,
+  .projects,
+  .community,
+  .request {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .project-card {
+    padding: 20px;
   }
 }
