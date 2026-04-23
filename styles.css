@@ -250,10 +250,7 @@ img {
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 16px;
-  background: linear-gradient(135deg, var(--gray-900) 0%, var(--purple) 50%, var(--pink) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--gray-900);
 }
 
 .hero-title {
@@ -374,11 +371,8 @@ img {
   margin-bottom: 48px;
 }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: start;
+.about-text {
+  max-width: 700px;
 }
 
 .about-text p {
@@ -486,9 +480,9 @@ img {
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-xl);
-  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--gray-200);
 }
 
 .project-card:hover::before {
@@ -934,13 +928,8 @@ img {
     display: none;
   }
 
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .about-stats-inline {
-    justify-content: center;
+  .about-text {
+    max-width: 100%;
   }
 
   .projects-grid {
