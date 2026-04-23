@@ -123,7 +123,6 @@ img {
   height: 36px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 20%;
 }
 
 .nav-links {
@@ -244,7 +243,6 @@ img {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 20%;
   margin-bottom: 20px;
   box-shadow: var(--shadow-lg);
 }
@@ -879,7 +877,6 @@ img {
   height: 36px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 20%;
 }
 
 .footer-left p {
