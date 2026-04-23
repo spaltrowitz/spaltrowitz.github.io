@@ -673,6 +673,10 @@ img {
   font-weight: 600;
   color: var(--purple);
   margin-bottom: 8px;
+  min-height: 2.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .community-desc {
