@@ -393,8 +393,8 @@ img {
 }
 
 .about-text em {
-  color: var(--purple);
-  font-style: normal;
+  color: var(--gray-800);
+  font-style: italic;
   font-weight: 600;
 }
 
