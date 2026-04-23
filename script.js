@@ -82,6 +82,23 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // ========================================
+// Mobile: move project links into header row
+// ========================================
+function adjustProjectCards() {
+  if (window.innerWidth <= 768) {
+    document.querySelectorAll('.project-card').forEach(card => {
+      const header = card.querySelector('.project-header');
+      const links = card.querySelector('.project-links, .project-links-right');
+      if (links && links.parentNode !== header) {
+        header.insertBefore(links, header.querySelector('.status-badge'));
+      }
+    });
+  }
+}
+adjustProjectCards();
+window.addEventListener('resize', adjustProjectCards);
+
+// ========================================
 // Form submission + validation
 // ========================================
 const form = document.querySelector('.request-form');
