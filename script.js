@@ -90,7 +90,7 @@ function adjustProjectCards() {
       const header = card.querySelector('.project-header');
       const links = card.querySelector('.project-links, .project-links-right');
       if (links && links.parentNode !== header) {
-        header.insertBefore(links, header.querySelector('.status-badge'));
+        header.appendChild(links);
       }
     });
   }

@@ -1002,7 +1002,8 @@ img {
 
   .status-badge {
     font-size: 0.65rem;
-    margin-left: auto;
+    margin-left: 0;
+    margin-right: auto;
   }
 
   .project-header {
@@ -1019,6 +1020,7 @@ img {
     display: flex;
     align-items: center;
     gap: 6px;
+    margin-left: auto;
   }
 
   .project-link {
